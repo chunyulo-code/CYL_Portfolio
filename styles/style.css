@@ -86,6 +86,7 @@ i {
 }
 
 .leftSideBtns i {
+  display: none;
   padding: 1rem 0;
   color: var(--fontLightGray);
 }
@@ -96,7 +97,7 @@ i {
 
 .leftSideBtns:after {
   content: "";
-  display: block;
+  display: none;
   width: 3%;
   height: 7rem;
   background: var(--hovedBrightBlue);
@@ -116,6 +117,7 @@ i {
 }
 
 .rightSideBtns i {
+  display: none;
   position: absolute;
   left: -5%;
   padding: 0.5rem 0;
@@ -129,7 +131,7 @@ i {
 
 .rightSideBtns:after {
   content: "";
-  display: block;
+  display: none;
   width: 3%;
   height: 7rem;
   background: var(--hovedBrightBlue);
@@ -157,7 +159,7 @@ i {
   left: 0%;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
   background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
 }
 
@@ -486,7 +488,7 @@ i {
 
 .footer {
   text-align: center;
-  margin: 3rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .footer span {
@@ -501,6 +503,9 @@ i {
 }
 
 @media screen and (min-width: 576px) {
+  .home canvas {
+    z-index: 0;
+  }
   .about {
     height: 100vh;
   }
@@ -514,6 +519,16 @@ i {
   .about .container .imgBox:after {
     width: 100%;
     top: -10%;
+  }
+  .leftSideBtns i,
+  .rightSideBtns i {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .leftSideBtns:after,
+  .rightSideBtns:after {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
