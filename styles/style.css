@@ -1,9 +1,11 @@
 :root {
   --darkBlue: #1c1d20;
   --brightBlue: rgb(98, 222, 253);
+  --hovedBrightBlue: rgb(71, 159, 181);
   --fontwhite: #edf0f1;
   --fontLightGray: #c8c8c8;
   --folderBackground: #25262b;
+  --btnHover: rgb(49, 103, 118);
 }
 
 * {
@@ -26,6 +28,24 @@ i {
   color: var(--brightBlue);
 }
 
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn-outline-primary {
+  color: var(--brightBlue) !important;
+  border: 1px solid var(--brightBlue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--hovedBrightBlue);
+  border: 1px solid var(--brightBlue);
+  color: #fdfdfd !important;
+}
+
 .header {
   height: 5rem;
   position: fixed;
@@ -33,6 +53,90 @@ i {
   left: 0%;
   right: 0%;
   z-index: 99;
+}
+
+.header a {
+  position: relative;
+}
+
+.header a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 0.1rem;
+  bottom: 0%;
+  left: 0%;
+  background-color: var(--brightBlue);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.header a:hover::after {
+  width: 100%;
+}
+
+.leftSideBtns {
+  position: fixed;
+  height: 35vh;
+  bottom: 0%;
+  left: 2%;
+  z-index: 99;
+  font-size: 1.3rem;
+}
+
+.leftSideBtns i {
+  padding: 1rem 0;
+  color: var(--fontLightGray);
+}
+
+.leftSideBtns i:hover {
+  color: var(--brightBlue);
+}
+
+.leftSideBtns:after {
+  content: "";
+  display: block;
+  width: 3%;
+  height: 7rem;
+  background: var(--hovedBrightBlue);
+  opacity: 0.8;
+  right: 22.5%;
+  bottom: 0%;
+  position: absolute;
+}
+
+.rightSideBtns {
+  position: fixed;
+  height: 20vh;
+  bottom: 0%;
+  right: 2%;
+  z-index: 99;
+  font-size: 1.3rem;
+}
+
+.rightSideBtns i {
+  position: absolute;
+  left: -5%;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: var(--fontLightGray);
+}
+
+.rightSideBtns i:hover {
+  color: var(--brightBlue);
+}
+
+.rightSideBtns:after {
+  content: "";
+  display: block;
+  width: 3%;
+  height: 7rem;
+  background: var(--hovedBrightBlue);
+  opacity: 0.8;
+  left: 22.5%;
+  bottom: 0%;
+  position: absolute;
 }
 
 .home {
@@ -84,14 +188,13 @@ i {
   border-radius: 2rem;
   position: relative;
   z-index: 99;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-.btn-outline-primary,
-.btn-outline-primary:hover,
-.btn-outline-primary:active,
-.btn-outline-primary:visited {
-  color: var(--brightBlue) !important;
-  border: 1px solid var(--brightBlue);
+.home .bt1:hover {
+  background-color: var(--hovedBrightBlue);
+  color: white;
 }
 
 .about::before {
@@ -238,6 +341,18 @@ i {
   margin: 1.3rem 0 4rem 0;
   letter-spacing: 0.2rem;
   text-decoration: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.projects a:hover {
+  color: var(--hovedBrightBlue);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projects .item {
@@ -257,13 +372,13 @@ i {
   opacity: 1;
 }
 
+.projects .item i {
+  margin-bottom: 1.3rem;
+}
+
 .projects .item .content {
   text-align: left;
   color: var(--fontLightGray);
-}
-
-.projects .item .content .icons i {
-  font-size: 10rem;
 }
 
 .projects .item .content h3 {
@@ -291,9 +406,87 @@ i {
   cursor: pointer;
 }
 
+.contact {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.contact .txtBox h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: var(--fontLightGray);
+  position: relative;
+}
+
+.contact .txtBox h2::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 0.2rem;
+  background: var(--brightBlue);
+  opacity: 1;
+  left: 30%;
+  top: 120%;
+  position: absolute;
+}
+
+.contact .txtBox h6 {
+  color: var(--fontwhite);
+  font-weight: 100;
+  font-size: 0.7rem;
+  margin: 4rem 0 2rem 0;
+  letter-spacing: 0.2rem;
+}
+
+.contact .infoBox {
+  padding: 1rem 0rem;
+}
+
+.contact .infoBox form {
+  text-align: left;
+  width: 100%;
+}
+
+.contact .infoBox form input,
+.contact .infoBox form textarea {
+  width: 80%;
+  background-color: var(--folderBackground);
+  border: 0px solid var(--hovedBrightBlue);
+  margin: 0.2rem 0rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+}
+
+.contact .infoBox form ::-webkit-input-placeholder {
+  color: var(--brightBlue);
+}
+
+.contact .infoBox form :-ms-input-placeholder {
+  color: var(--brightBlue);
+}
+
+.contact .infoBox form ::-ms-input-placeholder {
+  color: var(--brightBlue);
+}
+
+.contact .infoBox form ::placeholder {
+  color: var(--brightBlue);
+}
+
+.contact .infoBox form button {
+  margin: 3rem 0;
+}
+
+.contact .infoBox form button outline-primary:hover {
+  background-color: var(--hovedBrightBlue);
+  color: white;
+}
+
 .footer {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
 }
 
 .footer span {

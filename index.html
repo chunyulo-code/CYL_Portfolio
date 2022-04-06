@@ -50,17 +50,59 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav text-uppercase ms-auto gap-5">
-              <a class="nav-link" aria-current="page" href="#about">about</a>
+            <div
+              class="navbar-nav text-uppercase ms-auto gap-3 gap-md-3 gap-lg-5"
+            >
+              <a class="nav-link mt-4 mt-lg-0" aria-current="page" href="#about"
+                >about</a
+              >
               <a class="nav-link" href="#projects">projects</a>
               <a class="nav-link" href="#blog">blog</a>
-              <a class="nav-link btn btn-outline-primary" href="#">contact</a>
+              <a class="nav-link btn btn-outline-primary" href="#contact"
+                >contact</a
+              >
             </div>
           </div>
         </div>
       </nav>
     </header>
     <!--section header end -->
+
+    <div class="leftSideBtns">
+      <ul>
+        <li>
+          <a href="https://github.com/chunyulo-code" aria-hidden="true"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/chun-yu-lo-09b35018b/"
+            aria-hidden="true"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100000428440350"
+            aria-hidden="true"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/chun.yu_lo/" aria-hidden="true"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="rightSideBtns">
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-angle-up"></i></a>
+        </li>
+      </ul>
+    </div>
 
     <!--section home start -->
     <section id="home" class="home">
@@ -320,7 +362,47 @@
     <!--section experience end -->
 
     <!--section contact start -->
-    <section class="footer"></section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row w-100 justify-content-center">
+          <div class="col-10 col-md-8 col-lg-6">
+            <div class="txtBox text-uppercase">
+              <h2>contact</h2>
+              <h6>Have a question or want to work together</h6>
+            </div>
+            <div class="infoBox">
+              <form action="" class="d-flex flex-column align-items-center">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name"
+                />
+                <label for="name"></label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                />
+                <label for="email"></label>
+                <textarea
+                  placeholder="Your message"
+                  type="text"
+                  name="msg"
+                  rows="5"
+                  cols="3"
+                ></textarea>
+                <label for="message"></label>
+                <button type="submit" class="btn btn-outline-primary">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--section contact end -->
 
     <!--section footer start -->
