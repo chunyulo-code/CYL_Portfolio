@@ -46,6 +46,11 @@ i {
   color: #fdfdfd !important;
 }
 
+.btnSelected {
+  background-color: var(--hovedBrightBlue);
+  color: white !important;
+}
+
 .header {
   height: 5rem;
   position: fixed;
@@ -78,11 +83,15 @@ i {
 
 .leftSideBtns {
   position: fixed;
-  height: 35vh;
+  height: 41vh;
   bottom: 0%;
   left: 2%;
   z-index: 99;
   font-size: 1.3rem;
+}
+
+.leftSideBtns ul li {
+  text-align: center;
 }
 
 .leftSideBtns i {
@@ -102,24 +111,28 @@ i {
   height: 7rem;
   background: var(--hovedBrightBlue);
   opacity: 0.8;
-  right: 22.5%;
+  right: 20%;
   bottom: 0%;
   position: absolute;
 }
 
 .rightSideBtns {
   position: fixed;
-  height: 20vh;
+  height: 17vh;
   bottom: 0%;
   right: 2%;
   z-index: 99;
   font-size: 1.3rem;
 }
 
+.rightSideBtns ul li {
+  text-align: center;
+}
+
 .rightSideBtns i {
   display: none;
   position: absolute;
-  left: -5%;
+  left: -6%;
   padding: 0.5rem 0;
   font-size: 2rem;
   color: var(--fontLightGray);
@@ -329,13 +342,17 @@ i {
   padding: 7rem 0;
 }
 
-.projects h2 {
+.projects .buttons {
+  padding-bottom: 3rem;
+}
+
+.projects .txt h2 {
   font-weight: 500;
   letter-spacing: 0.2rem;
   color: var(--fontLightGray);
 }
 
-.projects a {
+.projects .txt a {
   color: var(--brightBlue);
   font-weight: 100;
   font-size: 0.9rem;
@@ -351,7 +368,7 @@ i {
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.projects a:hover {
+.projects .txt a:hover {
   color: var(--hovedBrightBlue);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -372,6 +389,7 @@ i {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   opacity: 1;
+  display: none;
 }
 
 .projects .item i {
@@ -387,6 +405,7 @@ i {
   font-weight: 700;
   font-size: 1.2rem;
   margin: 1rem 0;
+  line-height: 2rem;
 }
 
 .projects .item .content p {
@@ -406,6 +425,10 @@ i {
           transform: translateY(-2%) scale(1.02, 1.02);
   opacity: 0.5;
   cursor: pointer;
+}
+
+.projects .show {
+  display: block;
 }
 
 .contact {

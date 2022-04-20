@@ -77,6 +77,13 @@
         </li>
         <li>
           <a
+            href="https://www.youtube.com/channel/UCGb98dJ_XWMMJFe44OTdVMg"
+            aria-hidden="true"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
             href="https://www.linkedin.com/in/chun-yu-lo-09b35018b/"
             aria-hidden="true"
             ><i class="fab fa-linkedin"></i
@@ -99,7 +106,9 @@
     <div class="rightSideBtns">
       <ul>
         <li>
-          <a href="#"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+          <a href="#" aria-hidden="true"
+            ><i class="fas fa-angle-up" aria-hidden="true"></i
+          ></a>
         </li>
       </ul>
     </div>
@@ -225,10 +234,48 @@
               <h2>Selected Projects</h2>
               <a href="#">view the archive</a>
             </div>
+
+            <div class="buttons">
+              <button
+                class="btn btn-outline-primary m-2 pBtn"
+                id="allBtn"
+                onclick="filterObjects('all'), workBtn('all')"
+              >
+                Show All
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 pBtn"
+                id="feBtn"
+                onclick="filterObjects('fe'), workBtn('feBtn')"
+              >
+                FrontEnd
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 pBtn"
+                id="uxuiBtn"
+                onclick="filterObjects('uxui'),  workBtn('uxuiBtn')"
+              >
+                UX/UI
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 pBtn"
+                id="arvrBtn"
+                onclick="filterObjects('arvr'),  workBtn('arvrBtn')"
+              >
+                AR/VR
+              </button>
+              <button
+                class="btn btn-outline-primary m-2 pBtn"
+                id="fabriBtn"
+                onclick="filterObjects('fabri'),  workBtn('fabriBtn')"
+              >
+                Fabrication
+              </button>
+            </div>
             <div
               class="row row-cols-1 row-cols-md-2 row-cols-lg-3 cardItems justify-content-center"
             >
-              <div class="col item">
+              <div class="col item fe uxui">
                 <div class="icons d-flex justify-content-start">
                   <i class="fa fa-folder-o fa-2x"></i>
                 </div>
@@ -242,12 +289,116 @@
                   <span>JavaScript</span><span>CSS</span><span>HTML</span>
                 </div>
               </div>
-              <div class="col item">
+              <div class="col item uxui arvr">
                 <div class="icons d-flex justify-content-start">
                   <i class="fa fa-folder-o fa-2x"></i>
                 </div>
                 <div class="content">
-                  <h3>CYL's personal website</h3>
+                  <h3>Natural Human-Drone Interface</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>User Experiencs</span><span>VR</span
+                  ><span>Interaction</span>
+                </div>
+              </div>
+              <div class="col item fabri uxui robot">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Cyberloon</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>Robot</span><span>Path Algorithm</span
+                  ><span>Mechanism</span>
+                </div>
+              </div>
+              <div class="col item fe uxui">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Open IoT Website</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>Node.js</span><span>React.js</span><span>IoT</span>
+                </div>
+              </div>
+              <div class="col item robot arvr">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Robot Controlled Camera</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>Robot Arm</span><span>Unreal Engine</span
+                  ><span>Film</span>
+                </div>
+              </div>
+              <div class="col item fe uxui">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Smart Drone</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>FrontEnd</span><span>User Experience</span
+                  ><span>Wearable Device</span>
+                </div>
+              </div>
+              <div class="col item fabri">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>S.N.O.W.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>Computational Design</span><span>Material</span
+                  ><span>Fabrication</span>
+                </div>
+              </div>
+              <div class="col item uxui arvr">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Project Project</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
+                    nostrum ipsam porro!
+                  </p>
+                  <span>Virtual Reality</span><span>Interaction</span
+                  ><span>Exhibition</span>
+                </div>
+              </div>
+              <div class="col item fabri cpDsn">
+                <div class="icons d-flex justify-content-start">
+                  <i class="fa fa-folder-o fa-2x"></i>
+                </div>
+                <div class="content">
+                  <h3>Tube in Construction</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dignissimos minus ea expedita qui soluta incidunt ad debitis
@@ -256,102 +407,34 @@
                   <span>JavaScript</span><span>CSS</span><span>HTML</span>
                 </div>
               </div>
-              <div class="col item">
+              <div class="col item robot cpDsn fabri">
                 <div class="icons d-flex justify-content-start">
                   <i class="fa fa-folder-o fa-2x"></i>
                 </div>
                 <div class="content">
-                  <h3>CYL's personal website</h3>
+                  <h3>Armbelivable</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dignissimos minus ea expedita qui soluta incidunt ad debitis
                     nostrum ipsam porro!
                   </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
+                  <span>Computational Design</span><span>Robot Printing</span
+                  ><span>Materail</span><span>Fabrication</span>
                 </div>
               </div>
-              <div class="col item">
+              <div class="col item cpDsn">
                 <div class="icons d-flex justify-content-start">
                   <i class="fa fa-folder-o fa-2x"></i>
                 </div>
                 <div class="content">
-                  <h3>CYL's personal website</h3>
+                  <h3>Marching Cube</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dignissimos minus ea expedita qui soluta incidunt ad debitis
                     nostrum ipsam porro!
                   </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
-                </div>
-              </div>
-              <div class="col item">
-                <div class="icons d-flex justify-content-start">
-                  <i class="fa fa-folder-o fa-2x"></i>
-                </div>
-                <div class="content">
-                  <h3>CYL's personal website</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
-                    nostrum ipsam porro!
-                  </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
-                </div>
-              </div>
-              <div class="col item">
-                <div class="icons d-flex justify-content-start">
-                  <i class="fa fa-folder-o fa-2x"></i>
-                </div>
-                <div class="content">
-                  <h3>CYL's personal website</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
-                    nostrum ipsam porro!
-                  </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
-                </div>
-              </div>
-              <div class="col item">
-                <div class="icons d-flex justify-content-start">
-                  <i class="fa fa-folder-o fa-2x"></i>
-                </div>
-                <div class="content">
-                  <h3>CYL's personal website</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
-                    nostrum ipsam porro!
-                  </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
-                </div>
-              </div>
-              <div class="col item">
-                <div class="icons d-flex justify-content-start">
-                  <i class="fa fa-folder-o fa-2x"></i>
-                </div>
-                <div class="content">
-                  <h3>CYL's personal website</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
-                    nostrum ipsam porro!
-                  </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
-                </div>
-              </div>
-              <div class="col item">
-                <div class="icons d-flex justify-content-start">
-                  <i class="fa fa-folder-o fa-2x"></i>
-                </div>
-                <div class="content">
-                  <h3>CYL's personal website</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos minus ea expedita qui soluta incidunt ad debitis
-                    nostrum ipsam porro!
-                  </p>
-                  <span>JavaScript</span><span>CSS</span><span>HTML</span>
+                  <span>C#</span><span>Algorithm Design</span
+                  ><span>Computer Graphic Algorithm</span>
                 </div>
               </div>
             </div>
@@ -377,6 +460,7 @@
                   name="name"
                   id="name"
                   placeholder="Your name"
+                  required
                 />
                 <label for="name"></label>
                 <input
@@ -384,6 +468,7 @@
                   name="email"
                   id="email"
                   placeholder="Your email"
+                  required
                 />
                 <label for="email"></label>
                 <textarea
@@ -392,6 +477,7 @@
                   name="msg"
                   rows="5"
                   cols="3"
+                  required
                 ></textarea>
                 <label for="message"></label>
                 <button type="submit" class="btn btn-outline-primary">
@@ -413,6 +499,7 @@
     <!--section footer end -->
 
     <!-- Optional JavaScript -->
+    <script src="./js/scripts.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
