@@ -228,14 +228,12 @@ i {
       font-weight: 300;
       line-height: 1.5rem;
       color: var(--fontLightGray);
-      ul {
-        li {
-          color: var(--brightBlue);
-        }
-      }
       span {
         color: var(--brightBlue);
         font-weight: 300;
+      }
+      ul li {
+        color: red;
       }
     }
     .skillSet {

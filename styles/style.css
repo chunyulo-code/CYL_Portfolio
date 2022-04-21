@@ -253,13 +253,13 @@ i {
   color: var(--fontLightGray);
 }
 
-.about .txt p ul li {
-  color: var(--brightBlue);
-}
-
 .about .txt p span {
   color: var(--brightBlue);
   font-weight: 300;
+}
+
+.about .txt p ul li {
+  color: red;
 }
 
 .about .txt .skillSet ul {
