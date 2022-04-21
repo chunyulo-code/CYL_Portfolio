@@ -253,9 +253,13 @@ i {
   color: var(--fontLightGray);
 }
 
+.about .txt p ul li {
+  color: var(--brightBlue);
+}
+
 .about .txt p span {
   color: var(--brightBlue);
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .about .txt .skillSet ul {
@@ -301,6 +305,29 @@ i {
   top: 0%;
   position: absolute;
   z-index: -2;
+}
+
+.about .imgBox:hover img {
+  -webkit-filter: hue-rotate(190deg);
+          filter: hue-rotate(190deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.about .imgBox:hover::before {
+  border: 0.2rem solid rgba(41, 194, 255, 0.533);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 50%;
+  height: 95%;
+}
+
+.about .imgBox:hover:after {
+  border: 0.3rem solid rgba(41, 194, 255, 0.288);
+  width: 50%;
+  height: 95%;
 }
 
 .experience {
@@ -411,6 +438,7 @@ i {
 .projects .item .content p {
   font-size: 0.85rem;
   font-weight: 100;
+  letter-spacing: 0.05rem;
 }
 
 .projects .item .content span {

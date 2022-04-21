@@ -228,9 +228,14 @@ i {
       font-weight: 300;
       line-height: 1.5rem;
       color: var(--fontLightGray);
+      ul {
+        li {
+          color: var(--brightBlue);
+        }
+      }
       span {
         color: var(--brightBlue);
-        font-weight: 100;
+        font-weight: 300;
       }
     }
     .skillSet {
@@ -249,6 +254,7 @@ i {
   .imgBox {
     width: 70%;
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -274,6 +280,24 @@ i {
       top: 0%;
       position: absolute;
       z-index: -2;
+    }
+    &:hover {
+      img {
+        filter: hue-rotate(190deg);
+        transform: scale(1.1);
+        transition: all 0.3s ease-in;
+      }
+      &::before {
+        border: 0.2rem solid rgba(41, 194, 255, 0.533);
+        transition: all 0.3s ease-in;
+        width: 50%;
+        height: 95%;
+      }
+      &:after {
+        border: 0.3rem solid rgba(41, 194, 255, 0.288);
+        width: 50%;
+        height: 95%;
+      }
     }
   }
 }
@@ -365,6 +389,7 @@ i {
       p {
         font-size: 0.85rem;
         font-weight: 100;
+        letter-spacing: 0.05rem;
       }
       span {
         font-size: 0.7rem;
